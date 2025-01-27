@@ -16,5 +16,5 @@ function messageHandler(){
   
         // Open WhatsApp
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-       location.href = url; // Opens the link in a new tab
+       window.location.href = url; // Opens the link in a new tab
 }
