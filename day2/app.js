@@ -12,7 +12,7 @@ function noHandler(){
 
 function messageHandler(){
         const phoneNumber = "9113349427"; 
-        const message = "yes ! I like you, WIll  you be my bff 🥀"; // Custom pre-filled message
+        const message = "yes ! I like you, WIll  you be my bff ?🥀"; // Custom pre-filled message
   
         // Open WhatsApp
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
