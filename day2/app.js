@@ -11,7 +11,7 @@ function noHandler(){
 }
 
 function messageHandler(){
-        const phoneNumber = "9113349427"; 
+        const phoneNumber = "919113349427"; 
         const message = "yes ! I like you, Will you be my BF or will you marry me ? 🥀 🙂" ; // Custom pre-filled message
   
         // Open WhatsApp
