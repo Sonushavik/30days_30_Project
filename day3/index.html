@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta> 
+        <title>Document</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+        <meta name="description" content="Track your income and expenses effortlessly with this simple Expense and Income Tracker. Manage your finances and view a detailed transaction history.">
+
+<style>
+        body{
+                font-family: "Playwrite IN", serif;
+        }
+</style>
+</head>
+<body class="flex justify-center mt-10 bg-[#10002b] text-[#9d4edd]">
+        <section class="flex justify-center align-center text-voilet-500 ">
+                <div class="w-[500px] rounded-3xl p-8 border-2 border-violet-500">
+                        <h1>Total Saving : ₹<span class="text-xl" id="currBalance"> </span></h1>
+                        <div class="flex justify-around border-2 border-violet-500 rounded-3xl mt-5 p-4">
+                                <div>
+                                        <h1>Income</h1>
+                                        <p >₹<span id="income">0</span></p>
+                                </div>
+                                <div>
+                                        <h1>expense</h1>
+                                        <p >₹<span id="expense">0</span></p>
+                                </div>
+                        </div>
+                        <form id="form" onsubmit="submitHandler(event)">
+                        <input id="amount" class="text-xl w-full border-2 mt-5 rounded-3xl p-4 border-violet-500" type="number" placeholder="amount">
+                        <input  id="details" class="text-xl w-full border-2 mt-5 rounded-3xl p-4 border-violet-500" type="text" placeholder="Details" >
+                        <div class="flex justify-around gap-2">
+                        <button onclick="clickHandler1()" class="border-2 border-violet-500 mt-5 w-[49%] rounded-3xl p-4  text-red-500 text-2xl">Expense</button>
+                        <button onclick="clickHandler2()"  class="border-2 border-violet-500 mt-5 w-[49%] p-4 rounded-3xl text-green-500 text-2xl">Income</button>
+                </form>
+                </div>
+                        <hr class="my-8 border-2">
+
+                        <div id="transcation">
+                                <h1>Transcations</h1>
+                                <!-- <div class="border-t-1 py-4 bg-gray-800 border-violet-500 mt-4 mb-1">Income ₹500 by freelance</div> -->
+
+                        </div>
+                </div>
+        </section>
+        <script src="app.js"></script>
+</body>
+</html>

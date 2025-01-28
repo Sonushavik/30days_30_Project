@@ -5,13 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <title>coin toss</title>
+        <style>
+                *{
+                        margin: 0;
+                        padding: 0;
+                        background-color: rgb(152, 207, 255);
+                }
+
+                .main-block{
+                     border: 2px solid black;
+                     width: 400px;
+                     height: 400px;
+                     margin: auto;
+                     align-items: center;
+                     margin-top: 50px;
+                     /* background-color: chocolate; */
+                     border-radius: 2px;
+                }
+
+
+
+        </style>
 </head>
 <body>
+        <div class="main-block">
                 <h1 class="text-8xl text-center mt-20 transition transform 0.6s" id="coin"> 🪙</h1>
                 <div class="text-3xl text-center mt-20" id="result"> click toss button</div>
                 <div class="flex item-center justify-center">
                         <button id="btn" class="text-3xl bg-black text-white  py-2 px-10 rounded mt-5"  onclick="tossHandler()">Toss</button>
                 </div>
+        </div>
 
                 <audio id="tossSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
         <script  src="app.js"></script>
