@@ -11,10 +11,10 @@ function noHandler(){
 }
 
 function messageHandler(){
-        const phoneNumber = "9113349427"; 
-        const message = "yes ! I like you, WIll  you be my bff ?🥀"; // Custom pre-filled message
+        const phoneNumber = "919113349427"; 
+        const message = "yes ! I like you, Will you be my BF or will you marry me ? 🥀 🙂" ; // Custom pre-filled message
   
         // Open WhatsApp
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank"); // Opens the link in a new tab
+       window.location.href = url; // Opens the link in a new tab
 }
