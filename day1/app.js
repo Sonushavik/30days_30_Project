@@ -9,11 +9,13 @@ function tossHandler(){
       tossSound.currentTime = 0; // Reset the sound to the start
       tossSound.play();
 
-        coin.style.transform = 'rotateY(720deg)';
+        coin.style.transform = 'rotateY(360deg)';
         setTimeout(() => {
                 const toss = Math.random() < 0.5 ? 'Heads' : 'Tails';
 
-                coin.textContent = toss === 'Heads' ? '🙂' : '🐔';
+                coin.textContent = toss === 'Heads' ? '🙂' : '☹️';
+
+                result.classList.add(toss === 'Heads' ? 'text-green-900' : 'text-red-900');
 
                 result.textContent = toss;
 
