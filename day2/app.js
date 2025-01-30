@@ -9,10 +9,10 @@ function noHandler(){
                 btnParent.style.cssText = 'flex-direction: column-reverse';
         }
 }
-
+ 
 function messageHandler(){
         const phoneNumber = "919113349427"; 
-        const message = "yes ! I like you, Will you be my BF or will you marry me ? 🥀 🙂" ; // Custom pre-filled message
+        const message = "yes ! you are so cute ? " ; // Custom pre-filled message
   
         // Open WhatsApp
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

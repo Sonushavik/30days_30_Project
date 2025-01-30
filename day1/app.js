@@ -9,7 +9,7 @@ function tossHandler(){
       tossSound.currentTime = 0; // Reset the sound to the start
       tossSound.play();
 
-        coin.style.transform = 'rotateY(360deg)';
+        coin.style.transform = 'rotateY(360deg)'; 
         setTimeout(() => {
                 const toss = Math.random() < 0.5 ? 'Heads' : 'Tails';
 

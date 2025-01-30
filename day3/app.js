@@ -10,7 +10,7 @@ function clickHandler1(){
         whichbtn = "expense";
         console.log(whichbtn);
 }
-
+ 
 function clickHandler2(){
         whichbtn = "income";
         console.log(whichbtn);
