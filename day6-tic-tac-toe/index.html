@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+                src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <title>Tic Tac Toe</title>
+</head>
+
+<body class="bg-[#2A004E]"> 
+        <section class=" flex flex-col items-center  justify-center">
+                <h1 class="text-5xl font-bold  shadow-lg py-5 text-[#C62300]">Tic-Tac-Toe</h1>
+                <div class="bg-[#500073] py-10 px-5 rounded-[20px]">
+                        <div class="flex">
+                                <div id="a1"
+                                        class="w-[150px] h-[150px] box border-b-4 border-indigo-500 flex justify-center items-center">
+                                </div>
+                                <div id="b1"
+                                        class="w-[150px] h-[150px] box border-4 border-indigo-500 border-t-0 flex justify-center items-center">
+                                </div>
+
+                                <div id="c1"
+                                        class="w-[150px] h-[150px] box border-b-4 border-indigo-500 flex justify-center items-center">
+                                </div>
+
+                        </div>
+                        <div class="flex">
+
+                                <div id="a2"
+                                        class="w-[150px] h-[150px] box border-b-4 border-indigo-500 flex justify-center items-center">
+                                </div>
+
+                                <div id="b2"
+                                        class="w-[150px] h-[150px] box border-4 border-indigo-500 border-t-0 flex justify-center items-center">
+                                </div>
+
+                                <div id="c2"
+                                        class="w-[150px] h-[150px] box border-b-4 border-indigo-500 flex justify-center items-center">
+                                </div>
+
+                        </div>
+                        <div class="flex">
+
+                                <div id="a3" class="w-[150px] h-[150px] box flex justify-center items-center"></div>
+
+                                <div id="b3"
+                                        class="w-[150px] h-[150px] box border-4 border-indigo-500 border-b-0 border-t-0 flex justify-center items-center">
+                                </div>
+
+                                <div id="c3"
+                                        class="w-[150px] h-[150px] box border-b-0 border-indigo-500 flex justify-center items-center">
+                                </div>
+
+                        </div>
+
+                        <h1 id="resultText" class="text-5xl text-green-500  text-center mt-10"></h1>
+                </div>
+                <div class="">
+                        <button class="border-none bg-[#BED754] mt-3 rounded-md transition 0.3s active:[scale:0.8] p-3" restartHandler() id="restartbtn">Restart Game</button>
+                </div>
+        </section>
+        <script src="app.js"></script>
+</body>
+
+</html>
