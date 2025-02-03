@@ -16,7 +16,7 @@
 
 const loader = document.querySelector('.loader')
 const card = document.querySelector('.card')
-const username = document.querySelector('.username')
+const username = document.querySelector('.username') 
 const bio = document.querySelector('.bio')
 const profileImage = document.querySelector('.profile-image')
 const linkName = document.querySelector('.link-name')
