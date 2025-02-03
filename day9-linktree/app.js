@@ -26,10 +26,13 @@ const linkCard = document.querySelector('.inner-card')
 function applyData(data){
         username.innerText = data.username;
         bio.innerText = data.bio;
-        profileImage.src = data.profileImage
+        profileImage.src = data.profileImage;
+
+        linkCard.innerHTML = "";
+
         data.socialLinks.map(link => {
                 linkCard.innerHTML = linkCard.innerHTML + `<a id="linkUrl" class= "link-div" href="${link.linkUrl}">
-                <img src="icons/${link.linkName}.png" alt ="" class="icon">
+                <img src="icons/${link.linkName.toLowerCase()}.png" alt ="" class="icon">
                 <h2 class = "link-name">${link?.linkName}</h2>
                 </a>`
         })
@@ -37,7 +40,7 @@ function applyData(data){
 
 function fetchData () {
         loader.style.display = 'block'
-        fetch('https://api.npoint.io/9447d17b2b34e3f70165')
+        fetch('https://api.npoint.io/32afc64d31aa232a2206')
         .then(data =>data.json() )
         .then(data => {
                 loader.style.display = 'none'
