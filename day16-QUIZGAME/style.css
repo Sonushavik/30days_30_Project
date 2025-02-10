@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameName{
+    text-align: center; font-weight: 900; font-size: 40px; text-decoration: underline; color: blue; margin-top: -30px;
+}
+
+body{
+    background-image: url(./background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.card{
+    background-color: #FFF2F2;
+    width: 100%;
+    margin-top: 150px;
+    max-width: 550px;
+    border: 2px solid #FFF2F2;
+    border-radius: 2rem;
+    padding: 50px 30px;
+}
+
+#question{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    color: chocolate;
+}
+
+#loader{
+        /* display: none; */
+    font-size: 1.5rem;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.card label{
+    font-size: 2rem;
+    /* font-size: larger; */
+    font-weight: 600;
+}
+
+.option{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+
+}
+
+#error, #loader{
+    margin-top: 150px;
+    font-size: 2rem;
+}
+
+#error{
+    font-weight: bold;
+    color: rgb(255, 56, 56);
+}
+
+.hidden{
+    display: none;
+}
