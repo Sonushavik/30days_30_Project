@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@714&display=swap');
+
+body {
+  text-align: center;
+  background-color: #2A004E;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 714;
+  font-style: normal;
+}
+
+.scoreBox{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #BED754;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #1D1616;
+}
+
+
+h1 {
+  color: #F14A00;
+  text-decoration: underline;
+}
+
+h2 {
+  color: #DCD7C9;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 2.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.red {
+  background-color: #d95980;
+}
+
+.purple {
+  background-color: #819ff9;
+}
+
+.green {
+  background-color: #63aac0;
+}
+
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: green;
+}
