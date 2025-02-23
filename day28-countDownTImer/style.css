@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Atkinson Hyperlegible Mono", serif;
+}
+
+.container{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./images/background.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 8%;
+        position: relative;
+}
+
+.logo{
+        width: 120px;
+        padding: 20px 0;
+        cursor: pointer;
+}
+
+.content{
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+}
+
+.content h1{
+        font-size: 64px;
+        font-weight: 600;
+}
+
+.content h1 span{
+        color: red;
+}
+
+.launch-time{
+        display: flex;
+        gap: 3rem;
+}
+
+.launch-time div{
+        text-align: center;
+}
+
+.launch-time div p{
+        font-size: 60px;
+        margin-bottom: -10px;
+        color: #FFAB5B;
+
+}
+
+.launch-time div span{
+        color: red;
+}
+
+.btn{
+        background-color: red;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        border: none;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        
+}
+
+.rocket{
+        width: 250px;
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+        0%{
+                bottom:0;
+                opacity: 0;
+        }
+        100%{
+                bottom: 105%;
+                opacity: 1;
+        }
+}
