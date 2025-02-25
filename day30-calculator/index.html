@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+                <div class="calculator">
+                        <form>
+                                <div class="display">
+                                    <input type="text" id="display" readonly>
+                                </div>
+                                <div>
+                                    <input type="button" value="AC" id="clear">
+                                    <input type="button" value="DE" id="delete">
+                                    <input type="button" value="." class="num">
+                                    <input type="button" value="/" class="num">
+                                </div>
+                                <div>
+                                    <input type="button" value="7" class="num">
+                                    <input type="button" value="8" class="num">
+                                    <input type="button" value="9" class="num">
+                                    <input type="button" value="*" class="num">
+                                </div>
+                                <div>
+                                    <input type="button" value="4" class="num">
+                                    <input type="button" value="5" class="num">
+                                    <input type="button" value="6" class="num">
+                                    <input type="button" value="-" class="num">
+                                </div>
+                                <div>
+                                    <input type="button" value="1" class="num">
+                                    <input type="button" value="2" class="num">
+                                    <input type="button" value="3" class="num">
+                                    <input type="button" value="+" class="num">
+                                </div>
+                                <div>
+                                    <input type="button" value="00" class="num">
+                                    <input type="button" value="0" class="num">
+                                    <input type="button" value="=" id="equal">
+                                </div>
+                            </form>
+                </div>
+        </div>
+
+</body>
+
+<script>
+        const display = document.getElementById("display");
+        const numButtons = document.querySelectorAll(".num");
+        const clearButton = document.getElementById("clear");
+        const deleteButton = document.getElementById("delete");
+        const equalButton = document.getElementById("equal");
+
+        numButtons.forEach( button => {
+                button.addEventListener("click", () => {
+                        display.value +=button.value;
+                })
+        })
+
+        clearButton.addEventListener("click", () => {
+                display.value = "";
+        })
+
+        deleteButton.addEventListener("click", ()=> {
+                display.value = display.value.slice(0, -1)
+        })
+
+        equalButton.addEventListener("click", () => {
+                display.value = eval(display.value);
+        })
+</script>
+</html>
